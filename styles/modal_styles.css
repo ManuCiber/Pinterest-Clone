@@ -1,0 +1,203 @@
+.add_pin_modal {
+    width: 100%;
+    height: 100%;
+    position: fixed; /* Cambiado a fixed para cubrir toda la pantalla */
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.add_pin_container {
+    padding: 2rem; /* Cambiado a rem para mejor adaptabilidad */
+    width: 90vw; /* Cambiado a vw para que sea responsivo */
+    max-width: 880px; /* Tamaño máximo */
+    height: auto; /* Cambiado a auto para adaptarse al contenido */
+    border-radius: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    display: flex;
+    background-color: #ffffff;
+}
+
+.side {
+    padding: 1rem; /* Cambiado a rem para mejor adaptabilidad */
+    width: 50%;
+    height: 100%;
+}
+
+.pint_mock_icon_container {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.pint_mock_icon {
+    width: 50%;
+}
+
+.section1 {
+    width: 100%;
+    height: 8vh; /* Cambiado a vh para mejor adaptabilidad */
+}
+
+.section2 {
+    padding: 0 1rem; /* Cambiado a rem para mejor adaptabilidad */
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 {
+    width: 100%;
+    height: 12vh; /* Cambiado a vh para mejor adaptabilidad */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left_side .section1 .pint_mock_icon_container {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(239, 239, 239, 0);
+    transition-duration: 0.3s;
+}
+
+#left_side .section1 .pint_mock_icon_container:hover {
+    background-color: rgba(239, 239, 239, 1);
+}
+
+#left_side .section2 #upload_img_label {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#left_side .section2 #upload_img_label input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+#left_side .section2 #upload_img_label .upload_img_container {
+    padding: 1rem; /* Cambiado a rem para mejor adaptabilidad */
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: #efefef;
+}
+
+#left_side .section2 #upload_img_label .upload_img_container #dotted_border {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 2px dashed #dadada;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#left_side .section2 .pint_mock_icon_container {
+    background-color: #767676;
+}
+
+#left_side .section3 .save_from_site {
+    width: 80%; /* Cambiado a porcentaje para mejor adaptabilidad */
+    max-width: 340px; /* Tamaño máximo */
+    height: 48px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    background-color: #efefef;
+}
+
+.modals_pin {
+    width: 90%; /* Cambiado a porcentaje para mejor adaptabilidad */
+    max-width: 252px; /* Tamaño máximo */
+    height: auto; /* Cambiado a auto para adaptarse al contenido */
+    border-radius: 16px;
+    position: relative;
+    display: none;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.pin_image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pin_max_width {
+    max-width: 100%;
+}
+
+.pin_max_height {
+    max-height: 100%;
+}
+
+#right_side .section1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#right_side .section1 .select_size {
+    width: 100%; /* Cambiado a 100% para mejor adaptabilidad */
+    max-width: 236px; /* Tamaño máximo */
+    height: 40px;
+    display: flex;
+}
+
+#right_side .section1 .select_size select {
+    width: 70%;
+    height: 100%;
+    border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    background-color: #EFEFEF;
+}
+
+#right_side .section1 .select_size .save_pin {
+    width: 30%;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: white;
+    background-color: #E60023;
+    cursor: pointer;
+}
+
+#right_side .section2 .new_pin_input {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #C6C6C6;
+    outline: none;
+    font-size: 16px;
+    background-color: #ffffff; /* Añadido un color de fondo */
+}
